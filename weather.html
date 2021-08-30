@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css bootstrap style sheet link  -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Weather</title>
+    <style>
+        .hoverClass {
+            opacity: 0.1;
+        }
+
+        .result {
+            text-align: center;
+        }
+
+        .body {
+            background-image: url(images/bg-image.jpg);
+
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .headline {
+            font-size: 40px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .main-result1 {
+            background-image: linear-gradient(gray, darkblue);
+            border-radius: 20px;
+            padding: 20px;
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+    </style>
+</head>
+
+<body class="body" id="body">
+    <header class="text-center">
+        <h1 class="headline text-light
+        mt-5">Weather Information Page</h1>
+        <input id="search-inputField " class="search-inputField p-1 px-5" type="text"
+            placeholder="Enter a location for Weather">
+        <button onclick="loadWeatherInformation();" class="search-btn bg-danger p-1 text-light"> Search</button>
+    </header>
+    <main id="main-result" class="d-flex justify-content-center mt-5 text-light">
+
+    </main>
+    <!-- bootstrap js link  -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="weather.js"></script>
+</body>
+
+</html>
